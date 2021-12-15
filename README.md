@@ -1,2 +1,2 @@
 # Learning-Java
-object oriented programming
+Learning object oriented programming by Kathryn Hodge
