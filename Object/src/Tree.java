@@ -1,10 +1,10 @@
 import java.awt.*;
 
 public class Tree {
-    double heightFT;
-    double trunkDiameterInches;
-    TreeType treeType;
-    static Color Trunk_Color = new Color(102,51,0);
+    private double heightFT;
+    private double trunkDiameterInches;
+    private TreeType treeType;
+    protected static Color Trunk_Color = new Color(102, 51, 0);
 
     /*Tree is classified as a construter
      * Using the key word we put the information into it*/
@@ -27,9 +27,25 @@ public class Tree {
                     this.treeType + " tree");
         }
     }
-    static void announceTree(){
-        System.out.println("Look out for that "+
+
+    static void announceTree() {
+        System.out.println("Look out for that " +
                 Trunk_Color + " tree");
     }
+
+    public double getHeightFt() {
+            return heightFT;
+    }
+    public double getTrunkDiameterInches() {
+        return trunkDiameterInches;
+    }
+    public void settTrunkDiameterInches(double trunkDiameterInches) {
+        this.trunkDiameterInches = trunkDiameterInches;
+    }
+
+    public TreeType getTreeType(){
+        return treeType;
+    }
+
 
 }
