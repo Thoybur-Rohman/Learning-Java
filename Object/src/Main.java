@@ -16,7 +16,10 @@ public class Main {
         System.out.println(Tree.Trunk_Color);
         Tree.announceTree(); */
         Color myTrunkColor = Tree.Trunk_Color;
-        Color myDefaultTrunkColor = Color.WHITE;
+        Color myDefaultWhite = Color.WHITE;
+        Color myDefaultBlue = Color.BLUE;
+        Color brighterBlue = myDefaultBlue.brighter();
+        brighterBlue.brighter();
 
 
 
