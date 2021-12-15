@@ -1,8 +1,10 @@
+import java.awt.*;
+
 public class Tree {
     double heightFT;
     double trunkDiameterInches;
     TreeType treeType;
-
+    static Color Trunk_Color = new Color(102,51,0);
 
     /*Tree is classified as a construter
      * Using the key word we put the information into it*/
@@ -21,7 +23,13 @@ public class Tree {
 
     void announceTallTree() {
         if (this.heightFT > 100) {
-            System.out.println("Thats a tall " + this.treeType + " tree");
+            System.out.println("Thats a tall " +
+                    this.treeType + " tree");
         }
     }
+    static void announceTree(){
+        System.out.println("Look out for that "+
+                Trunk_Color + " tree");
+    }
+
 }
